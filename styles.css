@@ -6,20 +6,29 @@
   font-family: "Luxurious Roman", serif;
 }
 
-/* * {
-  border: 1px solid black;
-} */
+html, body {
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  margin: 0; 
+  padding: 0;
+}
 
 header {
   display: flex;
   flex-direction: row;
   background-color: var(--header_footer);
+  height: 5vh;
+}
+
+header, footer {
+  vertical-align: center;
 }
 
 main {
   display: flex;
   flex-direction: column;
-  height: 80vh;
+  height: 90vh;
   background-color: var(--background);
 }
 
@@ -29,19 +38,24 @@ form {
 }
 
 label {
-  margin: 0 25%;
+  margin: 0 33%;
   font-size: 2.5rem;
   font-weight: bold;
 }
 
 input {
-  border-color: 5px solid var(--golden);
   width: 98%;
   height: 4rem;
 }
 
-button {
-  margin: 2rem 35%;
+.buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+fieldset {
+  margin: 10% 25% 33% 25%;
+  border: none;
 }
 
 footer {
@@ -50,6 +64,7 @@ footer {
   text-align: right;
   background-color: var(--header_footer);
   width: 100%;
+  height: 5vh;
 }
 
 .signature {
@@ -57,16 +72,25 @@ footer {
   font-weight: bold;
 }
 
-.submit-button {
+.submit-button, .reset-button {
+  margin: 1rem 1rem;
   width: 10rem;
   height: 5rem;
-  font-family: serif;
+  font-family: Arial, sans-serif;
   font-weight: bold;
   background-color: var(--golden);
   border-radius: 12.5px;
 }
 
+.submit-button {
+    margin-left: 30%
+}
+
 .initial-input, .result-field {
   background-color: #fff;
   border: 5px solid var(--golden);
+}
+
+h1, .signature {
+  margin-left: 2rem;
 }

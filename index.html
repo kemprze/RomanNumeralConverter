@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link ref="stylesheet" href="./styles.css"/>
+  <link rel="stylesheet" href="styles.css"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="description" content="Roman Numeral Converter"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,18 +16,23 @@
   <main>
   <fieldset class="main">
     <form class="converter-app">
-<div class="initial-input"> <label for="arabic-input">Arabic numeral</label>
-    <input id="arabic-input" type="text" required></div>
-    <button type="submit" class="submit-button" id="submit-button">Convert</button>
-    <div class="result-field">
-    <label for="roman-input">Roman numeral</label>
-      <input type="text" id="roman-input">
-      </div>
+    <div class="input"> <label for="arabic-input">Arabic numeral</label>
+        <input id="number" type="text">
+    </div>
+    <div class="buttons">
+        <button type="submit" class="submit-button" id="convert-btn">Convert</button>
+        <button type="reset" class="reset-button" id="reset-btn">Reset</button>
+    </div>
+    <div class="output">
+        <label for="output">Roman numeral</label>
+        <input type="text" id="output">
+    </div>
     </form>
   </fieldset>
   </main>
   <footer>
     <p class="signature">&copy; 2025 Kemprze</p>
   </footer>
+<script src="script.js"></script>
 </body>
 </html>
